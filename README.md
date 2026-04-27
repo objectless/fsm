@@ -45,12 +45,12 @@ Tampermonkey is the main tested target.
 
 ### 2. Install the script
 
-Open the `.user.js` file in your browser, or create a new userscript in Tampermonkey and paste the script contents.
+Open the `fsm_reddit_subreddit_blocker.js` file in your browser, or create a new userscript in Tampermonkey and paste the script contents.
 
 Recommended filename:
 
 ```text
-reddit-subreddit-blocker.user.js
+fsm_reddit_subreddit_blocker.js
 ```
 
 ---
@@ -225,52 +225,6 @@ Enable **Debug logging** in the manager or through the Tampermonkey menu, then o
 ```text
 [RedditBlocker]
 ```
-
----
-
-## Development
-
-Recommended userscript header:
-
-```javascript
-// ==UserScript==
-// @name         Reddit Subreddit Blocker (New Reddit + Shreddit)
-// @namespace    https://0mfg.wtf/
-// @version      0.4.0
-// @description  Hide posts from blocked subreddits on Reddit feeds. Adds per-post Block buttons, manager UI, import/export, and SPA/Shreddit support.
-// @author       Cannicus
-// @license      MIT
-// @match        https://www.reddit.com/*
-// @match        https://new.reddit.com/*
-// @exclude      https://old.reddit.com/*
-// @icon         https://www.redditstatic.com/desktop2x/img/favicon/favicon-32x32.png
-// @grant        GM_getValue
-// @grant        GM_setValue
-// @grant        GM_addStyle
-// @grant        GM_registerMenuCommand
-// @grant        GM_setClipboard
-// @run-at       document-idle
-// ==/UserScript==
-```
-
----
-
-## Suggested Repo Layout
-
-```text
-reddit-subreddit-blocker/
-├─ README.md
-├─ LICENSE
-└─ reddit-subreddit-blocker.user.js
-```
-
----
-
-## License
-
-MIT License.
-
----
 
 ## Disclaimer
 
